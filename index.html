@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Smithys Bookmarks</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="dialog-styles.css" />
+    <link rel="stylesheet" href="context-menu-styles.css" />
+    <link rel="stylesheet" href="bookmark-bar-styles.css" />
+    <script type="text/javascript" src="index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"> 
+  </head>
+
+  <div id="bar-context-menu" >
+    <ul class="context-menu">
+      <li class="context-menu-item" onclick={openAddBookmarkDialog()}>Add Bookmark</li>
+    </ul>
+  </div>
+
+  <div id="bookmark-context-menu">
+    <ul class="context-menu">
+      <li class="context-menu-item" onclick={removeBookmark()}>Remove bookmark</li>
+      <li class="context-menu-item" onclick={openEditBookmarkDialog()}>Edit bookmark</li>
+    </ul>
+  </div>
+
+  <div id="add-bookmark-dialog" class="dialog" type="dialog">
+    <div class="dialog-header">Add Bookmark</div>
+    <div class="dialog-container">
+      <div>Name: </div>
+      <input type="text" id="add-bookmark-name"></input> 
+  
+      <div style="padding-top: 15px">Location: </div>
+      <input type="text" id="add-bookmark-location"/> 
+  
+      <div id="add-bookmarks-dialog-controls" class="dialog-controls">
+        <input type="button" value="Cancel" onclick={closeAddBookmarkDialog()} />
+        <input type="button" value="Save" onclick={addBookmark()} />
+      </div>
+    </div>
+  </div>
+
+   <div id="edit-bookmark-dialog" class="dialog">
+    <div class="dialog-header">Edit Bookmark</div>
+    <div class="dialog-container">
+      <div>Name: </div>
+      <input type="text" id="edit-bookmark-name"></input> 
+
+      <div style="padding-top: 15px">Location: </div>
+      <input type="text" id="edit-bookmark-location"/> 
+
+      <div id="edit-bookmarks-dialog-controls" class="dialog-controls">
+        <input type="button" value="Cancel" onclick={closeEditBookmarkDialog()} />
+        <input type="button" value="Save" onclick={saveBookmark()} />
+      </div>
+   </div>
+  </div>
+
+
+  <body>
+      <ul class="bar" id="bar">
+      </ul>
+  </body>
+</html>

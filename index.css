@@ -1,0 +1,45 @@
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 10.5pt;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+span {
+  display: inline-block;
+}
+
+img {
+  display: inline-block;
+}
+
+#helper-window {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  border: #cdc7c2 1px solid;
+  background-color: #f5f6f4;
+  border-radius: 5px;
+}
+
+#helper-window-container {
+  padding: 15px;
+}
+
+#helper-window-header {
+  margin-right: 5px;
+}
+
+#helper-window-header-spacer {
+  width: 80%;
+}
+
+#helper-window-header-text {
+  cursor: default;
+}

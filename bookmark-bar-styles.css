@@ -1,0 +1,36 @@
+.bar {
+  list-style: none;
+  background: #f5f6f4;
+  border-bottom: #cdc7c2 1px solid;
+  /* Need this here.. firefox is adding some spacing under ul */
+  height: 25px;
+  padding-top: 5px;
+  padding-bottom: 3px;
+}
+
+.item:hover {
+  background-color: #dfdedd;
+  border-radius: 5px;
+}
+
+.item {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: hidden;
+  white-space: nowrap;
+  max-width: 120px;
+  cursor: default;
+  z-index: 10;
+  margin-left: 10px;
+  padding: 2px 3px 4px 0px;
+}
+
+.item-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.dropzone {
+  width: 10px;
+}

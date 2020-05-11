@@ -1,0 +1,27 @@
+.context-menu {
+  background: #ffffff;
+  list-style: none;
+  border: #cdc7c2 1px solid;
+}
+
+.context-menu-item:hover {
+  background-color: #0a84ff;
+  color: white;
+}
+
+.context-menu-item {
+  padding-left: 25px;
+  padding-right: 20px;
+}
+
+#bookmark-context-menu {
+  position: absolute;
+  display: none;
+  z-index: 10;
+}
+
+#bar-context-menu {
+  position: absolute;
+  display: none;
+  z-index: 10;
+}
